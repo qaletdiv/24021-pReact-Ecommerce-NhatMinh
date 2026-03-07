@@ -19,8 +19,8 @@ export const MOCK_PRODUCTS = [
     name: 'AirPods Pro Gen 2',
     description: 'Chống ồn chủ động vượt trội, âm thanh thích ứng và thời lượng pin ấn tượng.',
     price: 5990000,
-    image: 'https://images.unsplash.com/photo-1588423770574-0107a6609a7d?q=80&w=1000',
-    images: ['https://images.unsplash.com/photo-1588423770574-0107a6609a7d?q=80&w=1000'],
+    image: 'https://i.pinimg.com/736x/c9/5e/a2/c95ea2616047a11138cb6bea77a8ba02.jpg',
+    images: ['https://i.pinimg.com/736x/c9/5e/a2/c95ea2616047a11138cb6bea77a8ba02.jpg'],
     isFeatured: false,
     category: 'Phụ kiện',
     stock: 50,
@@ -169,6 +169,30 @@ export const MOCK_PRODUCTS = [
     category: 'Máy tính bảng',
     stock: 10,
     specs: "Chip M1, RAM 8GB, Màn 10.9 inch Liquid Retina, USB-C"
+  },
+  {
+    id: 'p15',
+    name: 'Xiaomi 14 Ultra',
+    description: 'Flagship Xiaomi hợp tác cùng Leica, camera periscope zoom 5x và sạc nhanh 90W vượt trội.',
+    price: 27990000,
+    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000',
+    images: ['https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000'],
+    isFeatured: true,
+    category: 'Điện thoại',
+    stock: 9,
+    specs: "Snapdragon 8 Gen 3, RAM 16GB, Camera Leica 50MP, Pin 5000mAh, Sạc 90W"
+  },
+  {
+    id: 'p16',
+    name: 'Keychron K2 Pro',
+    description: 'Bàn phím cơ không dây hot-swap, layout 75%, kết nối đa thiết bị Bluetooth và USB-C.',
+    price: 2190000,
+    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1000',
+    images: ['https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1000'],
+    isFeatured: false,
+    category: 'Phụ kiện',
+    stock: 30,
+    specs: "Layout 75%, Hot-swap, Bluetooth 5.1 + USB-C, Pin 4000mAh, Đèn nền RGB"
   }
 ];
 
