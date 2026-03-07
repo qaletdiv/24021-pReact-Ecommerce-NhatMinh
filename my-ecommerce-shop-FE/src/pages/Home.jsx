@@ -26,13 +26,27 @@ const Home = () => {
     <div>
       <Carousel autoplay className="mb-8 rounded-lg overflow-hidden shadow-lg">
         <div>
-          <div className="h-52 md:h-80 bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center text-white text-2xl md:text-4xl font-bold">
-            Siêu Sale - Giá Sốc Hôm Nay
+          <div
+            className="h-52 md:h-80 flex items-center justify-center text-white text-2xl md:text-4xl font-bold"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1600)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <span className="bg-black/40 px-6 py-3 rounded-lg">Siêu Sale - Giá Sốc Hôm Nay</span>
           </div>
         </div>
         <div>
-          <div className="h-52 md:h-80 bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center text-white text-2xl md:text-4xl font-bold">
-            Ưu đãi đặc biệt cho điện thoại
+          <div
+            className="h-52 md:h-80 flex items-center justify-center text-white text-2xl md:text-4xl font-bold"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <span className="bg-black/40 px-6 py-3 rounded-lg">Ưu đãi đặc biệt cho điện thoại</span>
           </div>
         </div>
       </Carousel>
