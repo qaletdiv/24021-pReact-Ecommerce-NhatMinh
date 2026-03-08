@@ -6,6 +6,8 @@ import Home from './pages/Home'; // Chúng ta sẽ tạo file này ngay bên dư
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
+import CheckOut from './pages/CheckOut';
+import OrderConfirmation from './pages/OrderConfirmation';
 import RequireAuth from './components/RequireAuth';
 import MyAccount from './pages/MyAccount';
 import Contact from './pages/Contact';
@@ -19,6 +21,8 @@ function App() {
         <Route path="products" element={<Products />} />
         <Route path="products/:id" element={<ProductDetail />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
+        <Route path="order-confirmation" element={<OrderConfirmation />} />
         <Route path="contact" element={<Contact />} />
         <Route path="my-account" element={<RequireAuth><MyAccount /></RequireAuth>} />
         {/* Sau này thêm các route con như: path="products", path="cart"... */}
