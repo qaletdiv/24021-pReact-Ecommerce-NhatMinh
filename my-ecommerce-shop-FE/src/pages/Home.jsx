@@ -101,7 +101,7 @@ const Home = () => {
             <div className="mb-3">
               <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800" alt="promo" className="w-full rounded" />
             </div>
-            <p className="text-sm">Mua 1 tặng 1, giảm thêm 10% khi thanh toán online.</p>
+            <p className="text-sm">Mua 2 tặng 1, giảm thêm 10% khi thanh toán online.</p>
           </Card>
 
           <Card size="small" className="mt-4">
