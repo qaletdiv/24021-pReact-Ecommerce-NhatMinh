@@ -46,7 +46,15 @@ const Cart = () => {
       dataIndex: 'quantity',
       key: 'quantity',
       render: (q, record) => (
-        <InputNumber min={1} value={q} onChange={(val) => dispatch(updateQuantity({ id: record.id, quantity: val }))} />
+        <InputNumber
+          min={1}
+          value={q}
+          onChange={(val) => {
+            const num = Number(val) || 1;
+            const safe = num < 1 ? 1 : Math.floor(num);
+            dispatch(updateQuantity({ id: record.id, quantity: safe }));
+          }}
+        />
       ),
     },
     {

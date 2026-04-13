@@ -55,9 +55,11 @@ const CheckOut = () => {
     const existingOrders = JSON.parse(localStorage.getItem('orders') || '[]');
     localStorage.setItem('orders', JSON.stringify([...existingOrders, order]));
 
-    dispatch(clearCart());
+    // Navigate to confirmation page first, then clear the cart to avoid
+    // the component redirecting back to cart because items become empty.
     message.success('Đặt hàng thành công!');
     navigate('/order-confirmation', { state: { order } });
+    dispatch(clearCart());
   }, [user, items, total, dispatch, navigate]);
 
   if (!isLoggedIn || items.length === 0) return null;
